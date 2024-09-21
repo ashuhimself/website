@@ -26,3 +26,6 @@ jobs:
     - name: Sync files to Azure VM
       run: |
         rsync -av -e "ssh -o StrictHostKeyChecking=no" ./ ashutosh@74.249.8.238:/var/www/html/
+
+
+#est
