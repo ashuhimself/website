@@ -17,9 +17,9 @@ jobs:
       run: |
         mkdir -p ~/.ssh
         ssh-keyscan -H 74.249.8.238 >> ~/.ssh/known_hosts
-        
+
     - name: Sync files to Azure VM
       run: |
-        rsync -av --delete ./ ashutosh@74.249.8.238:/home/ashutosh/var/www/html/
+        rsync -av --delete -e "ssh -v" ./ ashutosh@74.249.8.238:/home/ashutosh/var/www/html/
 
 
