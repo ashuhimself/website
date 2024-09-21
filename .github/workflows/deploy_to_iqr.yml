@@ -1,4 +1,4 @@
-name: Deploy to Website
+name: Deploy to Azure VM
 
 on:
   push:
@@ -13,6 +13,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
     - name: Add Azure VM to known_hosts
       run: |
         mkdir -p ~/.ssh
@@ -20,6 +25,4 @@ jobs:
 
     - name: Sync files to Azure VM
       run: |
-        rsync -av --delete -e "ssh -v" ./ ashutosh@74.249.8.238:/home/ashutosh/var/www/html/
-
-
+        rsync -av --delete -e "ssh -o StrictHostKeyChecking=no" ./ ashutosh@74.249.8.238:/home/ashutosh/var/www/html/
