@@ -1,4 +1,4 @@
-<svg width="116px" height="38px" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="240px" height="38px" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
   <title>IQR Analytics</title>
   <g transform="translate(0, 0)">
     <path d="M106,27A23,23,0,1,0,62.45,37.33a18.45,18.45,0,0,0-9-2.33c-11,0-20,9.85-20,22a23.09,23.09,0,0,0,5.81,15.5A19.12,19.12,0,0,0,35,72c-12.7,0-23,12.54-23,28s10.3,28,23,28a19.12,19.12,0,0,0,4.31-.5A23.09,23.09,0,0,0,33.5,143c0,12.15,9,22,20,22a18.45,18.45,0,0,0,9-2.33A23,23,0,1,0,106,173c0-.34,0-0.67,0-1h0V28h0C106,27.67,106,27.34,106,27Z" fill="none" stroke="#220728" stroke-linejoin="bevel" stroke-width="8"/>
@@ -17,5 +17,5 @@
   </g>
   
   <!-- Added text on the right side -->
-  <text x="220" y="110" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#220728">IQR Analytics</text>
+  <text x="220" y="110" font-family="Arial, sans-serif" font-size="90" font-weight="bold" fill="#220728">IQR Analytics</text>
 </svg>
