@@ -1494,18 +1494,16 @@ a:hover {
   transform: translateX(0);
 }
 .offcanvas__logo a img {
-  width: 160px;
+  width: 160px; /* Default width */
 }
+
+/* Adjust the size for screens smaller than 575px */
 @media (max-width: 575px) {
   .offcanvas__logo a img {
-    width: 150px;
+    width: 130px; /* Only one value for this breakpoint */
   }
 }
-@media (max-width: 575px) {
-  .offcanvas__logo a img {
-    width: 130px;
-  }
-}
+
 .offcanvas__content {
   padding-bottom: 45px;
 }
